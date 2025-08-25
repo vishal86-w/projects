@@ -1,8 +1,7 @@
+
 async function getWeather() {
   const city = document.getElementById('cityInput').value.trim();
   if (!city) return alert("Please enter a city name.");
-
-  const apiKey = "3196a927bea316591e345e7ce8c3a351";
   const currentUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
